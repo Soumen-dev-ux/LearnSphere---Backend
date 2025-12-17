@@ -17,6 +17,11 @@ app.use("/api/courses", courseRoutes);
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
 
+//Enrollment
+const enrollmentRoutes = require("./routes/enrollmentRoutes");
+app.use("/api/enroll", enrollmentRoutes);
+
+
 // Test route
 app.get("/", (req, res) => {
   res.send("API is running...");
