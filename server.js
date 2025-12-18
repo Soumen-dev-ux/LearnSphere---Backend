@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const app = express();
 
-// ✅ MIDDLEWARE (MUST BE BEFORE ROUTES)
+// ✅ MIDDLEWARE 
 app.use(cors());
 app.use(express.json());
 
